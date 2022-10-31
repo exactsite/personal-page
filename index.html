@@ -43,7 +43,7 @@
       <div class="col-sm-6">
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link mrk_cntc">Contact</a>
           </li>
         </ul>
       </div>
@@ -175,6 +175,15 @@
             </div>
           </div>
 
+          <!--contact-->
+          <div id="contact" class="mrk_hide pe-4">
+            <h2 class="fw-semibold display-6 mrk_spce_bt0">
+              Contact
+            </h2>
+            <h5 class="fw-light mrk_spce_bt0">Get in touch, let's talk.</h5>
+            <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/mark-anthony-balo/" class="fw-bold mrk_color_hov">LinkedIn</a>, send me an <a href="mailto: markanthony.balo93@gmail.com" class="fw-bold mrk_color_hov">Email</a> or message me on <a href="skype:live:markanthony.balo93?chat" class="fw-bold mrk_color_hov">Skype</a>.</p>
+          </div>
+
         </div>
 
 
@@ -188,7 +197,7 @@
           </div>
 
           <!--Tech Stack-->
-          <div id="tech-stack" class="mrk_hide">
+          <div id="tech-stack" class="mrk_hide ps-4">
             <h2 class="fw-semibold display-6 mrk_spce_bt0 ">
               Technology Stack
             </h2>
@@ -285,6 +294,7 @@
 
     $(document).ready(function() {
 
+      //About me
       $("#mrk_ab").click(function() {
         $("#intro").hide("drop", {
           direction: "down"
@@ -298,6 +308,7 @@
         $(".mrk_back").delay(1600).slideDown(500);
       });
 
+      //tech stack
       $("#mrk_ts").click(function() {
         $("#profile-img").hide("drop", {
           direction: "down"
@@ -311,6 +322,7 @@
         $(".mrk_back").delay(1600).slideDown(500);
       });
 
+      //experience
       $("#mrk_ex").click(function() {
         $("#intro, #profile-img").hide("drop", {
           direction: "down"
@@ -324,24 +336,34 @@
         $(".mrk_back").delay(1600).slideDown(500);
       });
 
+      //contact
+      $(".mrk_cntc").click(function() {
+        $("#intro, #about-me, #profile-img, #tech-stack, #experience-left, #experience-right").hide("drop", {
+          direction: "down"
+        }, 800);
+        $("#contact").delay(800).show("drop", {
+          direction: "up"
+        }, 800);
+        $(".mrk_back").delay(1600).slideDown(500);
+      });
+
+      //back
       $(".mrk_back").click(function() {
         $(".mrk_back").slideUp(800);
 
-        $("#about-me, #experience-left").delay(800).hide("drop", {
+        $("#about-me, #experience-left, #contact").delay(800).hide("drop", {
           direction: "down"
         }, 800);
         $("#intro").delay(1600).show("drop", {
           direction: "down"
         }, 800);
 
-        $("#tech-stack, #experience-right").delay(800).hide("drop", {
+        $("#tech-stack, #experience-right, #contact").delay(800).hide("drop", {
           direction: "down"
         }, 800);
         $("#profile-img").delay(1600).show("drop", {
           direction: "down"
         }, 1000);
-
-
       });
 
     });
