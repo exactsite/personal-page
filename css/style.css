@@ -126,12 +126,6 @@ body {
   padding-bottom: 5rem !important;
 }
 
-/*Profile image*/
-.mrk_img_pr {
-  width: 500px;
-  height: auto;
-}
-
 /*glass background*/
 .glass-bg {
   width: auto;
@@ -147,3 +141,92 @@ body {
 .mrk_tc {
   background: var(--scnd_color);
 }
+
+.mrk_img_pr {
+  width: 500px;
+  height: auto;
+}
+
+/*Media*
+@media (min-width: 300px) {
+  .mrk_img_pr {
+    width: 100%;
+    height: auto;
+  }
+
+  .my-6 {
+    margin: 4rem auto;
+  }
+
+  .text-start {
+    margin-bottom: 10vh;
+  }
+
+  .py-6 {
+    padding-top: 10rem !important;
+  }
+
+  #navtop, #social {
+    display: none;
+  }
+
+  #about-me, #experience {
+    margin-bottom: -20vh;
+  }
+
+  .content {
+    display: block !important;
+  }
+
+  .text-end {
+    text-align: inherit !important;
+  }
+}
+
+@media (min-width: 540px) {
+  .mrk_img_pr {
+    width: 100%;
+    height: auto;
+  }
+
+  .my-6 {
+    margin: 4rem auto;
+  }
+
+  .text-start {
+    margin-bottom: 10vh;
+  }
+
+  .py-6 {
+    padding-top: 20rem !important;
+  }
+
+  #navtop, #social, .content {
+    display: block;
+  }
+
+  #about-me, #experience {
+    margin-bottom: -40vh;
+  }
+
+  .text-end {
+    text-align: inherit !important;
+  }
+
+  .display-2 {
+    font-size: calc(1.575rem + 1.9vw);
+  }
+
+  .fs-5 {
+    font-size: 1rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /*Profile image*/
+  .mrk_img_pr {
+    width: 500px;
+    height: auto;
+  }
+}*/
